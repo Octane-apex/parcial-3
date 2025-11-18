@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Boletos - Eventos Panamá</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Venta de Boletos - Concierto</h1>
+
+        <div class="form-box">
+            <label>Nombre del Cliente:</label>
+            <input type="text" id="cliente" placeholder="Ingrese el nombre">
+
+            <label>Cantidad de boletos VIP ($50):</label>
+            <input type="number" id="vip" min="0" value="0">
+
+            <label>Cantidad de boletos Butacas ($30):</label>
+            <input type="number" id="butacas" min="0" value="0">
+
+            <label>Cantidad de boletos Generales ($15):</label>
+            <input type="number" id="generales" min="0" value="0">
+
+            <button onclick="registrarVenta()">Registrar Venta</button>
+        </div>
+
+        <h2>Resumen General</h2>
+        <div id="resumen" class="resultado"></div>
+
+        <h2>Historial de Ventas</h2>
+        <div id="historial" class="historial"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
